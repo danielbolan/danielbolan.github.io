@@ -1,4 +1,4 @@
-baseURL = "//www.dcb.lu/"
+baseURL = "//dcb.lu/"
 canonifyurls = true
 languageCode = "en-us"
 title = "dcb.lu"
