@@ -1,2 +1,2 @@
 # danielbolan.github.io
-A place to shout into the void.
+A place for shouting into the void
