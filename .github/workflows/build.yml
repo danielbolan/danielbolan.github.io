@@ -35,7 +35,7 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          personal_token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          personal_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           user_name: 'Dan Bolan'
           user_email: 'daniel.c.bolan@gmail.com'
