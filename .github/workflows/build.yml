@@ -37,7 +37,7 @@ jobs:
         with:
           personal_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-          user_name: 'Dan Bolan'
-          user_email: 'daniel.c.bolan@gmail.com'
+          user_name: 'Github Actions Bot'
+          user_email: 'github-actions[bot]@users.noreply.github.com''
           publish_branch: gh-pages
           cname: dcb.lu
