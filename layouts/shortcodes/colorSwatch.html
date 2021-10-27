@@ -1,0 +1,20 @@
+<span style="display:inline-block">
+    <span style="
+    display:block;
+    min-width: 8em;
+    height: 8em;
+    border: 1px solid black;
+    background-color: #{{.Get 0}}
+    "></span>
+    <span style="
+    display: block;
+    width: 100%;
+    border-width: 0px 1px 1px 1px;
+    border-style: solid;
+    border-color: black;
+    text-transform: uppercase;
+    padding: 0.25em">
+        {{if .Get 1}}<span style="font-weight:600">{{ .Get 1 }}</span><br />{{ end }}
+        #{{.Get 0}}
+    </span>
+</span>
