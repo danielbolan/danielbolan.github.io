@@ -9,7 +9,7 @@ tags:
 
 ## First, A Few Fun Flag Facts
 
-Luxembourg and the Netherlands have nearly identical flags, save for two differences: a slightly different proportion[^1] and a different blue for the bottom stripe. I recent started wondering, though, _how_ different are they?
+Luxembourg and the Netherlands have nearly identical flags, save for two differences: a slightly different proportion[^1] and a different blue for the bottom stripe. I recently started wondering, though, _how_ different are they?
 
 [^1]: Interestingly, the Luxembourgish flag has two officially accepted proportions -- 1:2 and 3:5 are both considered fine. I don't know of any other countries that do this, though I'm sure someone better versed in vexillology could come up with an example.
 
@@ -41,11 +41,11 @@ The next question for me is how these line up with my native red/white/blue flag
 
 Okay, they're definitely all different colors, but you could probably swap out the American and Dutch red and no one would notice. Is there a good way of measuring the distance between two colors? Enter the lovely [L\*a\*b\* color space](https://en.wikipedia.org/wiki/CIELAB_color_space).
 
-Created by CIE in 1967 (same folks from the XYZ color space used in the Dutch flag), L\*a\*b\* is special because it is uniform, meaning that the euclidean distance between two colors often corresponds pretty closely to how similar two colors appear, called ΔE[^4]. This has a few caveats for strongly saturated colors, but compared to the current [state of the art](https://zschuessler.github.io/DeltaE/learn/#toc-delta-e-2000) its simplicity is worth a fair bit. A value of less than one means they're imperceptibly similar, and a value between 2 and 10 usually means they're pretty clearly different at a glance.
+Created by CIE in 1976 (same folks from the XYZ color space used in the Dutch flag), L\*a\*b\* is special because it is uniform, meaning that the euclidean distance between two colors often corresponds pretty closely to how similar two colors appear, called ΔE[^4]. This has a few caveats for strongly saturated colors, but compared to the current [state of the art](https://zschuessler.github.io/DeltaE/learn/#toc-delta-e-2000) its simplicity is worth a fair bit. A value of less than one means they're likely imperceptibly similar, and a value between 2 and 10 usually means they're pretty clearly different at a glance.
 
 [^4]: The E stands for _Empfindung_, German for sensation or impression. You know, just in case 3 Germanic languages weren't enough for one blog post.
 
-Great, so let's convert from sRGB to L\*a\*b\* and find ΔE! This is roughly as finicky as the translation to CIE XYZ with [one more step](https://www.cs.rit.edu/~ncs/color/t_convert.html#XYZ%20to%20CIE%20L*a*b*%20(CIELAB)%20&%20CIELAB%20to%20XYZ) to take us from XYZ to L\*a\*b\*. There's also the issue that sRGB only covers a subset of CIE's gamuts, but that's only a concern if we're going _to_ sRGB from XYZ or L\*a\*b\*. With that out of the way, we end up with this lovely table:
+Great, so let's convert from sRGB to L\*a\*b\* and find ΔE! This is roughly as finicky as the translation to CIE XYZ with [one more step](https://www.cs.rit.edu/~ncs/color/t_convert.html#XYZ%20to%20CIE%20L*a*b*%20(CIELAB)%20&%20CIELAB%20to%20XYZ) to take us from XYZ to L\*a\*b\*. With that out of the way, we end up with this lovely table:
 
 <!--
 L*a*b* coordinates for the blues:
