@@ -81,7 +81,7 @@ And you should end up with something more or less like this trippy pattern:
 
 ## Applying to an image
 
-After generating the halftone pattern, we can apply it to our desired image. This can be done by either multiplying the pixel luminosities, though I found the most success through a arithmetic mean. After applying a threshold you should be done!
+After generating the halftone pattern, we can apply it to our desired image. This can be done by either multiplying the pixel luminosities, though I found the most success through an arithmetic mean. After applying a threshold you should be done!
 
 ```python
 from PIL import Image
@@ -108,4 +108,4 @@ To quickly hack in some basic anti-aliasing, I simply generated the image 3 time
 
 A coworker recommended I use [Whitewall](https://whitewall.com) to print, and I have to say I was quite happy with their service. They said it would arrive in 9 business days, but it showed up in less than 2, and the quality of the print was more than suitable.
 
-I'm very happy with out this turned out, though with there was an enormous amount of fiddling necessary to produce decent results and I feel it still lacks a lot of the compositional finesse that Ed Fairburn is able to pull off. If you're interested in a piece in this style, but want a better result without tweaking variables for hours, I highly recommend you look into [commissioning some of Ed's incredible work.](https://edfairburn.com/commission-info/)
+I'm very happy with how this turned out, though with there was an enormous amount of fiddling necessary to produce decent results and I feel it still lacks a lot of the compositional finesse that Ed Fairburn is able to pull off. If you're interested in a piece in this style, but want a better result without tweaking variables for hours, I highly recommend you look into [commissioning some of Ed's incredible work.](https://edfairburn.com/commission-info/)
