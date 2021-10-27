@@ -8,7 +8,7 @@ tags:
   - space
 ---
 
-I've long admired the work of [Ed Fairburn](https://edfairburn.com). In many of his pieces he draws on old topographic maps, using the contour lines to build up stunning portraits. For [Abi's](https://abi.rocks) birthday I thought I'd try to do something similar with a region of the Moon that Abi and I have spent a lot of time analyzing together. I considered commissioning Ed directly, as he's worked with lunar maps in the past, but as far as I'm aware there aren't any good topographic maps of the area I'm interested in -- at least not at the resolution I was aiming for. This is meant to serve as a little tutorial on how I achieved this effect.
+I've long admired the work of [Ed Fairburn](https://edfairburn.com). In many of his pieces he draws on old topographic maps, using the contour lines to build up stunning portraits. For [Abi's](https://abi.rocks) birthday I thought I'd try to do something similar with a region of the Moon that Abi and I have spent a lot of time analyzing together. I considered commissioning Ed directly as he's worked with lunar maps in the past, but as far as I'm aware there aren't any good topographic maps of the area I'm interested in -- at least not at the resolution I was aiming for. This is meant to serve as a little tutorial on how I achieved this effect.
 
 ![The final result!](/img/topographic-halftone-patterns/result.png)
 
@@ -71,7 +71,7 @@ data -= contour_distance / 2
 data = np.abs(data) / (contour_distance / 2)
 ```
 
-Because I wanted to make sure that contours never completely disappeared nor got completely filled in, I made sure to overshoot the \[0-1\] range a bit and than clamped, so the elevation function ends up looking a bit like:
+Because I wanted to make sure that contours never completely disappeared nor got completely filled in, I made sure to overshoot the \[0-1\] range a bit and then clamped it so the elevation function ends up looking a bit like:
 
 ![Example of clamped ping-pong function](/img/topographic-halftone-patterns/pingpong.png)
 
