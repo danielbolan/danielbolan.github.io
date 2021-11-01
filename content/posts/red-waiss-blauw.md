@@ -91,9 +91,17 @@ All of these conversions between color spaces depend on what exactly we mean whe
 
 {{< colorSwatch ad1d25 "Illuminant C" >}} {{< colorSwatch AE1C28 "Illuminant D65" >}}
 
-Hm. Not a whole lot, apparently. Algorithm dE00 spits out a ΔE of 0.86 and 1.73, respectively. Still! It's worth being careful with these things. Every Wikipedia article I've seen uses the incorrect D65 illuminant for its sRGB conversion and as far as I can tell, there is zero mention of this corrected color in relation to the Dutch flag anywhere on the internet. I highly doubt that I'm the first person to run these calculations but I can't find anyone else who has documented it.
+Hm. Not a whole lot, apparently. Algorithm dE00 spits out a ΔE of 0.86 and 1.73, respectively. Still! It's worth being careful with these things. Every Wikipedia article I've seen uses the incorrect D65 illuminant for its sRGB conversion and as far as I can tell, there is zero mention of this corrected color in relation to the Dutch flag anywhere on the internet. I highly doubt that I'm the first person to run these calculations but I can't find anyone else who has documented[^5] it.
 
-(For replication's sake, I ran this calculation with the [colormath python module, version 3.0.0](https://github.com/gtaylor/python-colormath/releases/tag/3.0.0)).
+[^5]: Just for replication's sake, I ran this calculation with the [colormath python module, version 3.0.0](https://github.com/gtaylor/python-colormath/releases/tag/3.0.0).
+
+It's surprisingly difficult to find an image of the Dutch flag on any central goverment site. The central government has a logo that uses a blue similar to its flag, but as far as I can tell it isn't intended to be identical. Still, even this specification is confusing. It was [at one point specified](https://www.rijkshuisstijl.nl/communicatiemiddelen/bewegwijzering/logo-bewegwijzering) to use {{< inlineColor 123552 >}}, but I think this may be out of date because just about every official website I checked uses {{< inlineColor 154273 >}} instead -- including its own.
+
+Here's what I _could_ find, at least:
+
+- [rvo.nl](https://www.rvo.nl/onderwerpen/internationaal-ondernemen/landenoverzicht/luxemburg/factsheet-luxemburg) has a national factbook that uses slightly-off colors for Luxembourg's flag, and (understandably) lacks a listing for the Netherlands. I did find [this page](https://www.rvo.nl/caribisch) though, which uses the wrong D65-calculated color.
+- [ind.nl](https://ind.nl/en/Pages/default.aspx) has a flag in the corner for its language selection, which uses the incorrect colors {{< inlineColor d52b1e >}} and {{< inlineColor 01679a >}}.
+- Of the few hundred flags I sampled on Google Images, I didn't find a single one that used the right color. {{< inlineColor 204488 >}} made several appearances, though I'm not exactly sure why.
 
 ## Conclusion
 
