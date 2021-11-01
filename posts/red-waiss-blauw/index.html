@@ -333,8 +333,14 @@ Hail to the Red, Wäiss, and Blauw
 #AE1C28
 </span>
 </span></p>
-<p>Hm. Not a whole lot, apparently. Algorithm dE00 spits out a ΔE of 0.86 and 1.73, respectively. Still! It&rsquo;s worth being careful with these things. Every Wikipedia article I&rsquo;ve seen uses the incorrect D65 illuminant for its sRGB conversion and as far as I can tell, there is zero mention of this corrected color in relation to the Dutch flag anywhere on the internet. I highly doubt that I&rsquo;m the first person to run these calculations but I can&rsquo;t find anyone else who has documented it.</p>
-<p>(For replication&rsquo;s sake, I ran this calculation with the <a href=https://github.com/gtaylor/python-colormath/releases/tag/3.0.0>colormath python module, version 3.0.0</a>).</p>
+<p>Hm. Not a whole lot, apparently. Algorithm dE00 spits out a ΔE of 0.86 and 1.73, respectively. Still! It&rsquo;s worth being careful with these things. Every Wikipedia article I&rsquo;ve seen uses the incorrect D65 illuminant for its sRGB conversion and as far as I can tell, there is zero mention of this corrected color in relation to the Dutch flag anywhere on the internet. I highly doubt that I&rsquo;m the first person to run these calculations but I can&rsquo;t find anyone else who has documented<sup id=fnref:4><a href=#fn:4 class=footnote-ref role=doc-noteref>4</a></sup> it.</p>
+<p>It&rsquo;s surprisingly difficult to find an image of the Dutch flag on any central goverment site. The central government has a logo that uses a blue similar to its flag, but as far as I can tell it isn&rsquo;t intended to be identical. Still, even this specification is confusing. It was <a href=https://www.rijkshuisstijl.nl/communicatiemiddelen/bewegwijzering/logo-bewegwijzering>at one point specified</a> to use <span style="display:inline-block;width:1em;height:1em;vertical-align:sub;margin-right:.125em;border:1px solid #000;background-color:#123552"></span><span style=text-transform:uppercase>#123552</span>, but I think this may be out of date because just about every official website I checked uses <span style="display:inline-block;width:1em;height:1em;vertical-align:sub;margin-right:.125em;border:1px solid #000;background-color:#154273"></span><span style=text-transform:uppercase>#154273</span> instead &ndash; including its own.</p>
+<p>Here&rsquo;s what I <em>could</em> find, at least:</p>
+<ul>
+<li><a href=https://www.rvo.nl/onderwerpen/internationaal-ondernemen/landenoverzicht/luxemburg/factsheet-luxemburg>rvo.nl</a> has a national factbook that uses slightly-off colors for Luxembourg&rsquo;s flag, and (understandably) lacks a listing for the Netherlands. I did find <a href=https://www.rvo.nl/caribisch>this page</a> though, which uses the wrong D65-calculated color.</li>
+<li><a href=https://ind.nl/en/Pages/default.aspx>ind.nl</a> has a flag in the corner for its language selection, which uses the incorrect colors <span style="display:inline-block;width:1em;height:1em;vertical-align:sub;margin-right:.125em;border:1px solid #000;background-color:#d52b1e"></span><span style=text-transform:uppercase>#d52b1e</span> and <span style="display:inline-block;width:1em;height:1em;vertical-align:sub;margin-right:.125em;border:1px solid #000;background-color:#01679a"></span><span style=text-transform:uppercase>#01679a</span>.</li>
+<li>Of the few hundred flags I sampled on Google Images, I didn&rsquo;t find a single one that used the right color. <span style="display:inline-block;width:1em;height:1em;vertical-align:sub;margin-right:.125em;border:1px solid #000;background-color:#204488"></span><span style=text-transform:uppercase>#204488</span> made several appearances, though I&rsquo;m not exactly sure why.</li>
+</ul>
 <h2 id=conclusion>Conclusion</h2>
 <p>This isn&rsquo;t where I expected this question to go! Any question regarding color leads to a functionally infinite rabbit hole to dive down, but this one had a fun historic flair to it that I haven&rsquo;t needed to think about before. How colors are represented in law is also generally a pretty neat topic, and if it&rsquo;s something that piques your interest I recommend digging into the <a href=https://www.gerbenlaw.com/trademarks/apparel/tiffany/#75544375>wild world of trademarked colors</a>. If you&rsquo;re feeling a bit bold you might even decide to to <a href=https://culturehustle.com/products/tiff-blue>grab some of these colors</a> for yourself and go commit some color crimes :)</p>
 <section class=footnotes role=doc-endnotes>
@@ -348,6 +354,9 @@ Hail to the Red, Wäiss, and Blauw
 </li>
 <li id=fn:3 role=doc-endnote>
 <p>The E stands for <em>Empfindung</em>, German for sensation or impression. You know, just in case 3 Germanic languages weren&rsquo;t enough for one blog post.&#160;<a href=#fnref:3 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+<li id=fn:4 role=doc-endnote>
+<p>Just for replication&rsquo;s sake, I ran this calculation with the <a href=https://github.com/gtaylor/python-colormath/releases/tag/3.0.0>colormath python module, version 3.0.0</a>.&#160;<a href=#fnref:4 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
