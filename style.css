@@ -70,7 +70,16 @@ p.project-timeframe {
 }
 
 @media (max-width: 55rem) {
+    body {
+        padding-inline: 1rem;
+    }
+
+    main {
+        padding-inline: 0.5rem;
+    }
+
     .projects-container {
+        padding: 0;
         grid-template-columns: 1fr;
     }
 }
