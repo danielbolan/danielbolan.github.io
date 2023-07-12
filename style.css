@@ -62,6 +62,8 @@ h2 {
 
 img.thumbnail {
     width: 128px;
+    height: 128px;
+    object-fit: cover;
     border: 1px solid black;
 }
 
